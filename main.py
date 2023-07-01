@@ -1,11 +1,6 @@
-def range(min, max, step):
-    sonlar = []
-    while min < max:
-        if step:
-            sonlar.append(min)
-            min += int(step)
-        else:
-            sonlar.append(min)
-            min += 1
-    return sonlar
-print(range(0, 10, 2))
+def talaba_info(ism, fam, **kwargs):
+    kwargs['ism'] = ism
+    kwargs['fam'] = fam
+    return kwargs
+# talaba = talaba_info('olim','olimov', tyil=1995)
+
